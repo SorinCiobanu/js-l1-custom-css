@@ -1,0 +1,26 @@
+<script>
+
+    boxColor = prompt("Enter Box color name or code")
+    boxSize = prompt("Enter Box size in pixels")
+    borderColor = prompt("Enter Border color name or code")
+    borderSize = prompt("Enter Border size in pixels")
+
+    alert( "Border Style: \n\n  1) solid; \n\n  2) dotted; \n\n  3) ridge;  \n\n  4) groove;  \n\n  5) dashed;  \n\n  6) none." )
+    borderStyle = prompt("Enter Border style")
+
+    document.write(
+
+        `<div style="
+            background: ${boxColor};
+            width: ${boxSize}px;
+            height: ${boxSize}px;
+            border-width: ${borderSize}px;
+            border-color: ${borderColor};
+            border-style: ${borderStyle};"
+        >
+
+        </div>`
+
+    )
+
+</script>
